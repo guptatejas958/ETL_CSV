@@ -16,15 +16,15 @@ This project is optimized to:
 
 ## Features
 
-- ✅ Efficient chunked reading to avoid memory overload  
-- ✅ Data cleaning: remove negatives, standardize case, timestamp enrichment  
-- ✅ Temp file output for each chunk (stored in `/temp_chunks`)  
-- ✅ Final output merge into a single `.csv` file  
-- ✅ Batch inserts into SQLite  
-- ✅ Detailed logging of errors  
-- ✅ CLI interface for configuration  
-- ✅ Parallel processing using `concurrent.futures`  
-- ✅ Unit testing support
+- Efficient chunked reading to avoid memory overload  
+- Data cleaning: remove negatives, standardize case, timestamp enrichment  
+- Temp file output for each chunk (stored in `/temp_chunks`)  
+- Final output merge into a single `.csv` file  
+- Batch inserts into SQLite  
+- Detailed logging of errors  
+- CLI interface for configuration  
+- Parallel processing using `concurrent.futures`  
+- Unit testing support
 
 ## Project Structure
 
@@ -70,7 +70,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 🚀 How to Run
+## How to Run
 
 You can run the pipeline using the default values in `config.py`, or pass arguments via CLI.
 
@@ -123,19 +123,14 @@ https://drive.google.com/file/d/1ajyroMsUK7h2i8ccYjycDivVMC__f8MA/view?usp=shari
 
 ```python
 def test_transform_chunk_removes_cancelled_and_negative():
-    df = pd.DataFrame({...})
-    cleaned = transform_chunk(df)
-    assert ...  # assert cancelled/negative rows removed
+    assert cancelled/negative rows removed
 ```
 
 ### 2. `test_db_writer.py`
 
 ```python
 def test_insert_dataframe():
-    conn = create_connection(":memory:")
-    df = pd.DataFrame({...})
-    insert_dataframe(conn, df, "transactions")
-    ...
+    Test if the dataframe is writing in DB
 ```
 
 ### Run Tests
