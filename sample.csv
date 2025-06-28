@@ -1,0 +1,6 @@
+transaction_id,user_id,amount,timestamp,status
+t001,u001,150.00,2024-06-01T10:00:00Z,Completed
+t002,u002,-20.00,2024-06-01T11:00:00Z,Failed
+t003,u003,300.00,2024-06-01T12:00:00Z,Cancelled
+t004,u004,0.00,2024-06-01T13:00:00Z,completed
+t005,u005,500.00,2024-06-01T14:00:00Z,PENDING

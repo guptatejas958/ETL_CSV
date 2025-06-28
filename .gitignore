@@ -1,0 +1,6 @@
+venv/
+chunks/
+logs/
+test_file.csv
+cleaned_output.csv
+output.db
