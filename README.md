@@ -120,18 +120,11 @@ End-to-End integration testing has also been done with 5GB test_file with logs a
 https://drive.google.com/file/d/1ajyroMsUK7h2i8ccYjycDivVMC__f8MA/view?usp=sharing
 
 ### 1. `test_transformer.py`
-
-```python
-def test_transform_chunk_removes_cancelled_and_negative():
-    assert cancelled/negative rows removed
-```
+assert cancelled/negative rows removed
 
 ### 2. `test_db_writer.py`
+Test if the dataframe is writing in DB
 
-```python
-def test_insert_dataframe():
-    Test if the dataframe is writing in DB
-```
 
 ### Run Tests
 
